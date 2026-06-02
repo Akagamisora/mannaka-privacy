@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>プライバシーポリシー / Privacy Policy — まんなか / Mannaka</title>
+    <meta
+      name="description"
+      content="まんなか (Mannaka) のプライバシーポリシー。Privacy policy for the Mannaka iOS app."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #fff7f3;
+        --paper: #ffffff;
+        --surface: #fff1ec;
+        --ink: #2c2521;
+        --ink2: #6c5d54;
+        --ink3: #998a82;
+        --line: rgba(44, 37, 33, 0.1);
+        --line-strong: rgba(44, 37, 33, 0.18);
+        --accent: #ff6b5c;
+        --accent-deep: #e14b3b;
+        --accent-soft: #ffe7e1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN",
+          "ヒラギノ丸ゴ ProN W4", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.8;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .wrap {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 64px 24px 96px;
+      }
+
+      header.brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+
+      .mark {
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+        display: block;
+        object-fit: cover;
+        box-shadow: 0 1px 2px rgba(44, 37, 33, 0.12);
+      }
+
+      .brand-name {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: var(--ink);
+      }
+
+      .lang-switch {
+        margin-left: auto;
+        display: flex;
+        gap: 8px;
+      }
+
+      .lang-switch a {
+        font-size: 12px;
+        color: var(--ink3);
+        text-decoration: none;
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+      }
+
+      .lang-switch a:hover {
+        color: var(--accent-deep);
+        border-color: var(--accent);
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0 0 8px;
+        color: var(--ink);
+        letter-spacing: 0.02em;
+      }
+
+      .meta {
+        font-size: 13px;
+        color: var(--ink3);
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 56px 0 16px;
+        color: var(--ink);
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 32px 0 8px;
+        color: var(--ink);
+      }
+
+      p {
+        margin: 12px 0;
+        color: var(--ink2);
+      }
+
+      strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--accent-deep);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        color: var(--accent);
+      }
+
+      ul {
+        padding-left: 1.2em;
+        color: var(--ink2);
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      .divider {
+        height: 1px;
+        background: var(--line);
+        margin: 64px 0;
+        border: none;
+      }
+
+      footer {
+        margin-top: 80px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        font-size: 12px;
+        color: var(--ink3);
+        text-align: center;
+      }
+
+      .contact {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin-top: 16px;
+      }
+
+      .contact a {
+        font-weight: 500;
+      }
+
+      /* Other apps section */
+      .other-apps {
+        margin-top: 96px;
+        padding-top: 32px;
+        border-top: 1px solid var(--line);
+      }
+
+      .other-title {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        color: var(--ink3);
+        text-transform: uppercase;
+        margin: 0 0 20px;
+        padding: 0;
+        border: none;
+      }
+
+      .app-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .app-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 16px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.15s ease, transform 0.15s ease;
+      }
+
+      .app-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+
+      .app-card-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 11px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .app-card-meta {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .app-card-name {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+        margin-bottom: 2px;
+      }
+
+      .app-card-desc {
+        font-size: 13px;
+        color: var(--ink3);
+        line-height: 1.5;
+      }
+
+      .app-card-arrow {
+        color: var(--ink3);
+        font-size: 18px;
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 480px) {
+        .wrap {
+          padding: 40px 20px 64px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="brand">
+        <img
+          class="mark"
+          src="app-icon.png"
+          alt="まんなか / Mannaka アプリアイコン"
+          width="40"
+          height="40"
+        />
+        <span class="brand-name">まんなか / Mannaka</span>
+        <span class="lang-switch">
+          <a href="#ja">日本語</a>
+          <a href="#en">English</a>
+        </span>
+      </header>
+
+      <section id="ja">
+        <h1>プライバシーポリシー</h1>
+        <div class="meta">最終更新日：2026年6月3日</div>
+
+        <p>
+          「まんなか」（以下「本アプリ」）は、利用者のプライバシーを尊重し、
+          以下の方針で情報を取り扱います。
+        </p>
+
+        <h2>1. 取り扱う情報</h2>
+        <p>本アプリは以下の情報を端末内でのみ取り扱います：</p>
+        <ul>
+          <li>利用者が入力した<strong>参加者の名前</strong></li>
+          <li>利用者が選択した<strong>最寄り駅</strong>（駅名と緯度経度）</li>
+          <li>利用者が入力した<strong>駅までの徒歩分数</strong>（任意）</li>
+          <li>利用者が入力した<strong>集合時間</strong></li>
+        </ul>
+
+        <h2>2. 情報の保存先</h2>
+        <p>
+          上記の情報は<strong>端末のメモリ上にのみ</strong>保持されます。
+          アプリを終了すると情報は破棄され、永続的な保存は行いません。
+          サーバーや外部ストレージへの送信・保存も一切行いません。
+        </p>
+
+        <h2>3. 外部サービスとの通信</h2>
+        <p>
+          中心駅の提案にあたり、Apple の MapKit サービスと通信して、
+          公共交通の経路所要時間および地図情報を取得します。
+          この通信は Apple のサービスとして行われ、開発者を含む第三者が
+          通信内容を取得することはありません。
+          詳細は Apple のプライバシーポリシー（<a
+            href="https://www.apple.com/legal/privacy/"
+            target="_blank"
+            rel="noopener"
+            >apple.com/legal/privacy</a
+          >）をご参照ください。
+        </p>
+        <p>
+          本アプリは利用者の入力情報を、 MapKit
+          以外のいかなる外部サービスにも送信しません。
+        </p>
+
+        <h2>4. 第三者への提供・トラッキング</h2>
+        <p>
+          本アプリは、利用者の情報を第三者に提供しません。
+          広告 SDK、解析 SDK、トラッキング技術を一切使用しません。
+        </p>
+
+        <h2>5. 権限について</h2>
+        <p>
+          本アプリは<strong>位置情報サービスへのアクセス権限を要求しません</strong>。
+          中心駅の計算は、利用者が手入力した参加者の最寄り駅情報のみを使用します。
+        </p>
+        <p>
+          利用者の現在地は使用しません。
+        </p>
+
+        <h2>6. データの削除</h2>
+        <p>
+          本アプリにはデータの永続化機能がないため、
+          アプリを閉じるか強制終了するだけで、入力したすべての情報は破棄されます。
+          アプリをアンインストールした場合も同様に、関連するデータは残りません。
+        </p>
+
+        <h2>7. 子どものプライバシー</h2>
+        <p>
+          本アプリは特に子どもを対象としていません。13
+          歳未満の方が利用する場合は、保護者の管理下でご利用ください。
+        </p>
+
+        <h2>8. ポリシーの変更</h2>
+        <p>
+          本ポリシーは、必要に応じて改定されることがあります。
+          重要な変更がある場合は、本ページにて告知します。
+        </p>
+
+        <h2>9. お問い合わせ</h2>
+        <div class="contact">
+          本ポリシーまたは本アプリに関するご質問は、以下までご連絡ください：<br />
+          <a href="mailto:akagamisora@gmail.com">akagamisora@gmail.com</a>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <section id="en">
+        <h1>Privacy Policy</h1>
+        <div class="meta">Last Updated: June 3, 2026</div>
+
+        <p>
+          "Mannaka" (the "App") respects your privacy. This policy describes how
+          the App handles your data.
+        </p>
+
+        <h2>1. Data Handled</h2>
+        <p>The App handles the following information on your device only:</p>
+        <ul>
+          <li><strong>Participant names</strong> you enter</li>
+          <li>
+            <strong>Nearest stations</strong> you select (station name and
+            coordinates)
+          </li>
+          <li>
+            <strong>Walking time to the station</strong> you enter (optional)
+          </li>
+          <li><strong>Meeting time</strong> you set</li>
+        </ul>
+
+        <h2>2. Where Data Is Stored</h2>
+        <p>
+          The above information is kept <strong>only in your device's
+          memory</strong>. It is discarded when you close the App and is never
+          persisted. It is not transmitted to or stored on any server or
+          external storage.
+        </p>
+
+        <h2>3. External Services</h2>
+        <p>
+          To suggest a meeting station, the App communicates with Apple's
+          MapKit to retrieve public transit travel times and map information.
+          This communication is handled as an Apple service, and no third party
+          (including the developer) can access the contents of the
+          communication. See Apple's privacy policy (<a
+            href="https://www.apple.com/legal/privacy/"
+            target="_blank"
+            rel="noopener"
+            >apple.com/legal/privacy</a
+          >) for details.
+        </p>
+        <p>
+          The App does not send your input to any external service other than
+          MapKit.
+        </p>
+
+        <h2>4. Sharing and Tracking</h2>
+        <p>
+          The App does not share your data with third parties. It does not use
+          any advertising SDKs, analytics SDKs, or tracking technologies.
+        </p>
+
+        <h2>5. Permissions</h2>
+        <p>
+          The App does <strong>not request location services
+          permission</strong>. The center-station calculation uses only the
+          nearest-station information you manually enter for each participant.
+        </p>
+        <p>Your current location is never used.</p>
+
+        <h2>6. Data Deletion</h2>
+        <p>
+          Because the App has no persistence, simply closing or quitting the
+          App discards all entered information. Uninstalling the App leaves no
+          related data behind.
+        </p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>
+          The App is not directed at children. Users under 13 should use the
+          App under the supervision of a parent or guardian.
+        </p>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>
+          We may revise this policy from time to time. Significant changes will
+          be announced on this page.
+        </p>
+
+        <h2>9. Contact</h2>
+        <div class="contact">
+          For questions about this policy or the App, please contact:<br />
+          <a href="mailto:akagamisora@gmail.com">akagamisora@gmail.com</a>
+        </div>
+      </section>
+
+      <!-- 他のアプリ：同じ作者の作品を発見できるように -->
+      <section class="other-apps">
+        <h2 class="other-title">Other apps by Akagamisora</h2>
+        <div class="app-list">
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/hitokoma-privacy/"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/hitokoma-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">ひとこま / Frame</div>
+              <div class="app-card-desc">
+                写真 1 枚と一言で、毎日のひとこまを記録するアプリ
+              </div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <!--
+            他のアプリを追加するときはこのテンプレを複製：
+          <a class="app-card" href="..."><img class="app-card-icon" src="..." alt=""><div class="app-card-meta"><div class="app-card-name">App Name</div><div class="app-card-desc">Description</div></div><span class="app-card-arrow">→</span></a>
+          -->
+        </div>
+      </section>
+
+      <footer>© 2026 Akagamisora · まんなか / Mannaka</footer>
+    </div>
+  </body>
+</html>
