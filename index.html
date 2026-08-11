@@ -292,7 +292,7 @@
 
       <section id="ja">
         <h1>プライバシーポリシー</h1>
-        <div class="meta">最終更新日：2026年6月3日</div>
+        <div class="meta">最終更新日：2026年8月13日</div>
 
         <p>
           「まんなか」（以下「本アプリ」）は、利用者のプライバシーを尊重し、
@@ -300,19 +300,31 @@
         </p>
 
         <h2>1. 取り扱う情報</h2>
-        <p>本アプリは以下の情報を端末内でのみ取り扱います：</p>
+        <p>本アプリが取り扱うのは、利用者が入力・生成した以下の情報です：</p>
         <ul>
-          <li>利用者が入力した<strong>参加者の名前</strong></li>
+          <li>利用者が入力した<strong>参加者の名前</strong>（任意）</li>
           <li>利用者が選択した<strong>最寄り駅</strong>（駅名と緯度経度）</li>
           <li>利用者が入力した<strong>駅までの徒歩分数</strong>（任意）</li>
           <li>利用者が入力した<strong>集合時間</strong></li>
+          <li>利用者が入力した<strong>キーワード</strong>（「焼肉」「カフェ」など、任意）</li>
+          <li>利用者が保存した<strong>お気に入りのスポット</strong>・<strong>グループの履歴</strong></li>
         </ul>
+        <p>
+          これらはいずれも<strong>当社に送信されません</strong>。当社はサーバーを持たず、
+          利用者を識別するアカウントもありません。
+        </p>
 
         <h2>2. 情報の保存先</h2>
         <p>
-          上記の情報は<strong>端末のメモリ上にのみ</strong>保持されます。
-          アプリを終了すると情報は破棄され、永続的な保存は行いません。
-          サーバーや外部ストレージへの送信・保存も一切行いません。
+          上記の情報は<strong>利用者の端末内にのみ</strong>保持されます。
+          参加者の入力内容と検索結果はアプリを終了すると破棄されます。
+          一方、<strong>お気に入り・グループの履歴・アプリの設定は、
+          利用者が保存を選んだ場合に端末内のアプリ領域に保存されます</strong>
+          （グループの履歴は「まんなかプラス」の機能です）。
+        </p>
+        <p>
+          端末内に保存されたこれらのデータが、サーバーや外部ストレージ、iCloud
+          などに送信・同期されることはありません。
         </p>
 
         <h2>3. 外部サービスとの通信</h2>
@@ -329,14 +341,62 @@
           >）をご参照ください。
         </p>
         <p>
-          本アプリは利用者の入力情報を、 MapKit
-          以外のいかなる外部サービスにも送信しません。
+          無料でご利用の場合、広告の配信のために Google
+          と通信します（第 4 項）。
+          <strong
+            >利用者の入力情報が送信されるのは MapKit
+            に対してのみで、広告のために送信されることはありません。</strong
+          >
         </p>
 
-        <h2>4. 第三者への提供・トラッキング</h2>
+        <h2>4. 広告について</h2>
         <p>
-          本アプリは、利用者の情報を第三者に提供しません。
-          広告 SDK、解析 SDK、トラッキング技術を一切使用しません。
+          <strong>無料でご利用の場合、本アプリは Google の AdMob
+          による広告を表示します。</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>広告のために送信される情報</strong> —
+            広告の配信、表示回数の計測、不正防止のため、広告 ID（IDFA）、IP
+            アドレス、端末の種類や OS バージョンなどの技術情報が Google
+            に送信されます。これは広告 SDK
+            の動作によるもので、本アプリが独自に収集・保存するものではありません
+          </li>
+          <li>
+            <strong>入力内容は広告に渡しません</strong> —
+            参加者の名前・最寄り駅・キーワード・検索結果・履歴・お気に入りを、
+            広告の配信やターゲティングに使用することはありません
+          </li>
+          <li>
+            <strong>トラッキングの許可は利用者が選べます</strong> —
+            iOS の確認画面で許可・不許可を選べます。<strong
+              >許可しなくても、まんなかの機能はすべてお使いいただけます。</strong
+            >
+            許可しない場合、広告はパーソナライズされないものになります。設定は
+            iOS の「設定 > プライバシーとセキュリティ >
+            トラッキング」からいつでも変更できます
+          </li>
+          <li>
+            <strong>欧州経済領域（EEA）・英国・スイスの方</strong> —
+            適用される法令に基づき、広告に関する同意画面を別途表示します
+          </li>
+          <li>
+            <strong>広告を消す方法</strong> — アプリ内課金「まんなかプラス」
+            （月額・年額・買い切りのいずれか）をご購入いただくと、広告は表示されなくなります
+          </li>
+        </ul>
+        <p>
+          Google がデータをどのように取り扱うかについては、Google
+          のポリシー（<a
+            href="https://policies.google.com/technologies/partner-sites"
+            target="_blank"
+            rel="noopener"
+            >policies.google.com</a
+          >）をご参照ください。
+        </p>
+        <p>
+          広告以外の目的で利用者の情報を第三者に提供することはありません。解析
+          SDK は使用していません。
         </p>
 
         <h2>5. 権限について</h2>
@@ -350,9 +410,12 @@
 
         <h2>6. データの削除</h2>
         <p>
-          本アプリにはデータの永続化機能がないため、
-          アプリを閉じるか強制終了するだけで、入力したすべての情報は破棄されます。
-          アプリをアンインストールした場合も同様に、関連するデータは残りません。
+          参加者の入力内容と検索結果は、アプリを閉じるか強制終了するだけで破棄されます。
+        </p>
+        <p>
+          端末内に保存されるお気に入り・グループの履歴は、アプリ内でそれぞれ個別に削除できます。
+          <strong>アプリをアンインストールすれば、保存されたデータはすべて端末から消えます。</strong>
+          当社側には元から何も無いため、削除のご依頼をいただく必要はありません。
         </p>
 
         <h2>7. 子どものプライバシー</h2>
@@ -378,7 +441,7 @@
 
       <section id="en">
         <h1>Privacy Policy</h1>
-        <div class="meta">Last Updated: June 3, 2026</div>
+        <div class="meta">Last Updated: August 13, 2026</div>
 
         <p>
           "Mannaka" (the "App") respects your privacy. This policy describes how
@@ -386,9 +449,9 @@
         </p>
 
         <h2>1. Data Handled</h2>
-        <p>The App handles the following information on your device only:</p>
+        <p>The App handles the following information that you enter or create:</p>
         <ul>
-          <li><strong>Participant names</strong> you enter</li>
+          <li><strong>Participant names</strong> you enter (optional)</li>
           <li>
             <strong>Nearest stations</strong> you select (station name and
             coordinates)
@@ -397,14 +460,30 @@
             <strong>Walking time to the station</strong> you enter (optional)
           </li>
           <li><strong>Meeting time</strong> you set</li>
+          <li>
+            <strong>Keywords</strong> you enter (e.g. "cafe", "BBQ"; optional)
+          </li>
+          <li>
+            <strong>Favorite spots</strong> and <strong>group history</strong>
+            you choose to save
+          </li>
         </ul>
+        <p>
+          None of this is <strong>ever sent to us</strong>. We operate no
+          servers, and there is no account that identifies you.
+        </p>
 
         <h2>2. Where Data Is Stored</h2>
         <p>
-          The above information is kept <strong>only in your device's
-          memory</strong>. It is discarded when you close the App and is never
-          persisted. It is not transmitted to or stored on any server or
-          external storage.
+          The above information is kept <strong>only on your device</strong>.
+          Participant input and search results are discarded when you close the
+          App. <strong>Favorites, group history, and app settings are saved in
+          the App's storage on your device when you choose to save them</strong>
+          (group history is a Mannaka Plus feature).
+        </p>
+        <p>
+          Data stored on your device is never transmitted to or synced with any
+          server, external storage, or iCloud.
         </p>
 
         <h2>3. External Services</h2>
@@ -421,14 +500,62 @@
           >) for details.
         </p>
         <p>
-          The App does not send your input to any external service other than
-          MapKit.
+          When used for free, the App communicates with Google to serve ads
+          (Section 4).
+          <strong
+            >Your input is sent only to MapKit, and never for
+            advertising.</strong
+          >
         </p>
 
-        <h2>4. Sharing and Tracking</h2>
+        <h2>4. Advertising</h2>
         <p>
-          The App does not share your data with third parties. It does not use
-          any advertising SDKs, analytics SDKs, or tracking technologies.
+          <strong>When used for free, the App displays ads served by Google
+          AdMob.</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>What is sent for advertising</strong> — To deliver ads,
+            measure impressions, and prevent fraud, technical information such
+            as your advertising identifier (IDFA), IP address, device model,
+            and OS version is sent to Google. This is the behavior of the
+            advertising SDK; the App does not itself collect or store this
+            information
+          </li>
+          <li>
+            <strong>Your input is not shared with advertising</strong> —
+            Participant names, stations, keywords, search results, history, and
+            favorites are never used to serve or target ads
+          </li>
+          <li>
+            <strong>Tracking is your choice</strong> — iOS will ask whether you
+            allow tracking. <strong>Every Mannaka feature works whether or not
+            you allow it.</strong> If you decline, ads will be non-personalized.
+            You can change this at any time in iOS Settings > Privacy &amp;
+            Security > Tracking
+          </li>
+          <li>
+            <strong>If you are in the EEA, UK, or Switzerland</strong> — A
+            separate consent screen for advertising is shown as required by
+            applicable law
+          </li>
+          <li>
+            <strong>How to remove ads</strong> — Purchasing "Mannaka Plus"
+            (monthly, annual, or lifetime) removes all ads
+          </li>
+        </ul>
+        <p>
+          For how Google handles data, see Google's policies (<a
+            href="https://policies.google.com/technologies/partner-sites"
+            target="_blank"
+            rel="noopener"
+            >policies.google.com</a
+          >).
+        </p>
+        <p>
+          We do not share your information with third parties for any purpose
+          other than advertising as described above. The App uses no analytics
+          SDKs.
         </p>
 
         <h2>5. Permissions</h2>
@@ -441,9 +568,16 @@
 
         <h2>6. Data Deletion</h2>
         <p>
-          Because the App has no persistence, simply closing or quitting the
-          App discards all entered information. Uninstalling the App leaves no
-          related data behind.
+          Participant input and search results are discarded simply by closing
+          or quitting the App.
+        </p>
+        <p>
+          Favorites and group history stored on your device can each be deleted
+          from within the App.
+          <strong>Uninstalling the App removes all saved data from your
+          device.</strong>
+          Because we hold nothing on our side, there is no need to request
+          deletion from us.
         </p>
 
         <h2>7. Children's Privacy</h2>
