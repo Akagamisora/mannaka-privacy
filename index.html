@@ -308,6 +308,7 @@
           <li>利用者が入力した<strong>集合時間</strong></li>
           <li>利用者が入力した<strong>キーワード</strong>（「焼肉」「カフェ」など、任意）</li>
           <li>利用者が保存した<strong>お気に入りのスポット</strong>・<strong>グループの履歴</strong></li>
+          <li>利用者が「まとめて入力」に<strong>貼り付けた文章</strong>（任意）</li>
         </ul>
         <p>
           これらはいずれも<strong>当社に送信されません</strong>。当社はサーバーを持たず、
@@ -321,6 +322,11 @@
           一方、<strong>お気に入り・グループの履歴・アプリの設定は、
           利用者が保存を選んだ場合に端末内のアプリ領域に保存されます</strong>
           （グループの履歴は「まんなかプラス」の機能です）。
+        </p>
+        <p>
+          「まとめて入力」に貼り付けた文章は、参加者の名前と駅を読み取るためだけに端末の中で使い、保存しません。
+          読み取りは端末の中で行い（対応する iPhone では Apple の端末内の言語モデルを使います）、
+          文章そのものを外部に送ることはありません。読み取った駅名は、駅を探すために MapKit（第 3 項）に渡します。
         </p>
         <p>
           端末内に保存されたこれらのデータが、サーバーや外部ストレージ、iCloud
@@ -430,6 +436,7 @@
             <strong>Favorite spots</strong> and <strong>group history</strong>
             you choose to save
           </li>
+          <li><strong>Text you paste</strong> into "Paste to add" (optional)</li>
         </ul>
         <p>
           None of this is <strong>ever sent to us</strong>. We operate no
@@ -443,6 +450,14 @@
           App. <strong>Favorites, group history, and app settings are saved in
           the App's storage on your device when you choose to save them</strong>
           (group history is a Mannaka Plus feature).
+        </p>
+        <p>
+          Text you paste into "Paste to add" is used on your device only to
+          read participant names and stations, and is not saved. The reading
+          happens on your device (on supported iPhones, using Apple's on-device
+          language model), and the text itself is never sent anywhere. The
+          station names it finds are passed to MapKit (Section 3) to look up
+          the stations.
         </p>
         <p>
           Data stored on your device is never transmitted to or synced with any
